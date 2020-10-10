@@ -1,0 +1,10 @@
+.navbar {
+  background-color: darkslategray;
+  width: auto;
+}
+a, .btn{
+  color: white;
+}
+a.nav-link {
+  color: black;
+}

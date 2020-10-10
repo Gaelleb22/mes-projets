@@ -1,0 +1,22 @@
+<div class="row navbar navbar-expand-lg mb-3">
+  <a class="navbar-brand">Bienvenue !</a>
+
+  <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+    &#9776;
+  </button>
+
+  <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <div ngbDropdown class="d-inline-block">
+          <button class="btn" id="dropdownBasic1" ngbDropdownToggle>Mes réalisations</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Projets professionels</a>
+            <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Projets personnels</a>
+            <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Photographie</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col">
+    <ngb-carousel [interval]="2000" *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+      <ng-template ngbSlide *ngFor="let image of images">
+        <div class="picsum-img-wrapper">
+          <img [src]="image" alt="Random slide" class="img-fluid">
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</div>
+
